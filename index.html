@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Dipesh Palan | Advocate & Counsel</title>
+    
+    <!-- Tailwind CSS (Static Build) -->
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Senior Central Government Counsel & Advocate at Bombay High Court specializing in White-Collar Defence, Criminal Litigation, and Commercial Disputes.">
+    <link rel="canonical" href="https://yashpalan.legal/">
+    <link rel="icon" type="image/webp" href="asset/Logo_main.webp">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Yash Dipesh Palan | Advocate & Counsel">
+    <meta property="og:description" content="Senior Central Government Counsel & Advocate at Bombay High Court specializing in White-Collar Defence, Criminal Litigation, and Commercial Disputes.">
+    <meta property="og:image" content="https://yashpalan.legal/asset/Logo_main.webp">
+    <meta property="og:url" content="https://yashpalan.legal/">
+    <meta property="og:type" content="website">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Attorney",
+      "name": "Yash Dipesh Palan",
+      "image": "https://yashpalan.legal/asset/Logo_main.webp",
+      "@id": "https://yashpalan.legal",
+      "url": "https://yashpalan.legal",
+      "telephone": "+91 9029359496",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "jobTitle": "Senior Central Government Counsel",
+      "priceRange": "$$"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Config & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            900: '#0f172a', // Slate 900
+                            800: '#1e293b', // Slate 800
+                            gold: '#d97706', // Amber 600
+                            goldLight: '#fcd34d', // Amber 300
+                        }
+                    },
+                    animation: {
+                        blob: "blob 7s infinite",
+                        spinSlow: "spin 60s linear infinite",
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": { transform: "translate(0px, 0px) scale(1)" },
+                            "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                            "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                            "100%": { transform: "translate(0px, 0px) scale(1)" },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities for Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered delays */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Smooth gradient text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #fde68a, #d97706);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Disclaimer Modal (Bar Council Compliance) -->
+    <div id="disclaimer-modal" class="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 hidden transition-opacity duration-300 opacity-0">
+        <div class="bg-white max-w-2xl w-full p-8 rounded-sm shadow-2xl border-t-4 border-brand-gold transform scale-95 transition-transform duration-300">
+            <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6">Disclaimer & Confirmation</h2>
+            <div class="text-slate-600 text-sm space-y-4 mb-8 max-h-[60vh] overflow-y-auto pr-2 leading-relaxed">
+                <p>Per the rules of the Bar Council of India, advocates are prohibited from soliciting work or advertising. By clicking <strong>"I AGREE"</strong>, you acknowledge and confirm that:</p>
+                <ul class="list-disc pl-5 space-y-2 marker:text-brand-gold">
+                    <li>You are seeking information about <strong>Mr. Yash Dipesh Palan</strong> and his practice area for your own information and use.</li>
+                    <li>This information is provided only on your specific request, and any information obtained or materials downloaded from this website is completely at your own volition.</li>
+                    <li>There has been no advertisement, personal communication, solicitation, invitation, or inducement of any sort whatsoever from us or any of our members to solicit any work through this website.</li>
+                    <li>Accessing this website does not create a lawyer-client relationship.</li>
+                    <li>Mr. Yash Dipesh Palan is not liable for any consequence of any action taken by you relying on the material/information provided on this website.</li>
+                </ul>
+            </div>
+            <div class="flex justify-end gap-4 pt-4 border-t border-slate-100">
+                <a href="https://google.com" class="px-6 py-3 text-slate-500 font-bold hover:text-slate-800 transition-colors text-xs tracking-widest uppercase flex items-center">Decline</a>
+                <button onclick="acceptDisclaimer()" class="px-8 py-3 bg-brand-gold text-white font-bold hover:bg-amber-700 transition-colors text-xs tracking-widest uppercase shadow-lg">I Agree</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-brand-gold z-50 transition-all duration-100" style="width: 0%"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <img src="asset/Logo_main.webp" alt="YDP Legal Monogram" class="w-10 h-10 object-contain transition-colors nav-item-color">
+
+                <div>
+                    <div class="text-xl font-serif font-bold tracking-wide text-white transition-colors nav-item-color">YASH PALAN</div>
+                    <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 transition-colors nav-sub-color leading-tight">
+                        Advocate High Court
+                        <span class="block text-center tracking-[0.15em]">BLS LLM, PGDM ADR</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 text-sm font-semibold tracking-wider text-white nav-item-color">
+                <a href="#about" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-brand-gold after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">About</a>
+                <a href="#practice" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-brand-gold after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Practice Areas</a>
+                <a href="#approach" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-brand-gold after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Approach</a>
+                <a href="#contact" class="px-5 py-2 border border-white/30 rounded-sm hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all nav-btn">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white nav-item-color" onclick="toggleMenu()">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-900 z-30 transform translate-y-[-100%] transition-transform duration-500 flex flex-col items-center justify-center gap-8 md:hidden">
+        <button class="absolute top-6 right-6 text-white" onclick="toggleMenu()">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="#about" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-brand-gold">About</a>
+        <a href="#practice" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-brand-gold">Practice Areas</a>
+        <a href="#approach" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-brand-gold">Approach</a>
+        <a href="#contact" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-brand-gold">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center bg-brand-900 overflow-hidden">
+        <!-- High Court Sketch Background -->
+        <div class="absolute inset-0 z-0 pointer-events-none select-none">
+            <img src="asset/bombay_high_court_sketch.jpg" 
+                 alt="Bombay High Court" 
+                 class="w-full h-full object-cover object-bottom opacity-[0.075] invert mix-blend-screen filter grayscale translate-y-[16rem]">
+        </div>
+
+        <!-- Abstract Animated Background -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-32 left-20 w-96 h-96 bg-slate-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="reveal active">
+                <span class="inline-block py-1 px-3 border border-brand-gold/50 rounded-full text-brand-goldLight text-xs tracking-widest mb-6 bg-brand-gold/10 backdrop-blur-sm">
+                    SENIOR CENTRAL GOVERNMENT COUNSEL
+                </span>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-[1.1]">
+                    Precision Legal Strategy.<br />
+                    <span class="text-gradient">Unyielding Representation.</span>
+                </h1>
+                <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                    Specialized Counsel for criminal litigations and commercial disputes at the Hon’ble Bombay High Court and other subordinate courts. Safeguarding liberty, reputation, and proprietary rights with absolute integrity.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#contact" class="group px-8 py-4 bg-brand-gold text-white font-bold rounded-sm shadow-lg hover:bg-amber-700 transition-all flex items-center justify-center gap-2">
+                        Schedule Consultation 
+                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 border border-slate-500 text-slate-300 font-bold rounded-sm hover:bg-slate-800 hover:text-white transition-all text-center">
+                        View Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-brand-gold opacity-50"></div>
+                    <!-- Headshot Placeholder -->
+                    <div class="aspect-[3/4] bg-slate-200 rounded-sm overflow-hidden shadow-2xl relative group">
+                        <img src="asset/WhatsApp%20Image%202025-12-20%20at%207.12.57%20AM%20(2).jpeg" alt="Yash D. Palan" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 shadow-xl border-l-4 border-brand-gold hidden md:block">
+                        <p class="text-4xl font-serif font-bold text-slate-900">5+</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-wide mt-1">Years Experience</p>
+                    </div>
+                </div>
+
+                <div class="reveal delay-200">
+                    <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-3">The Advocate</h2>
+                    <h3 class="text-4xl font-serif font-bold text-slate-900 mb-6">Strategic Counsel for Complex Litigation</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Mr. Yash Dipesh Palan is a distinguished advocate practicing in Mumbai, appearing regularly before the Hon’ble Bombay High Court as well as various civil and criminal courts and tribunals across the city.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Presently working as <strong class="text-slate-900">Senior Central Government Counsel</strong>, he combines a deep understanding of statutory frameworks with aggressive defense strategies. He brings a unique perspective on regulatory and enforcement matters through his commitment to professional excellence.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="award" class="text-brand-gold"></i>
+                            <span class="font-semibold text-slate-800 text-sm">Govt. Counsel</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="briefcase" class="text-brand-gold"></i>
+                            <span class="font-semibold text-slate-800 text-sm">Civil & Criminal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Journey Section -->
+    <section id="journey" class="py-24 bg-slate-50 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-900/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-3">Milestones</h2>
+                <h3 class="text-4xl font-serif font-bold text-slate-900">Professional Journey</h3>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-gold/0 via-brand-gold/30 to-brand-gold/0"></div>
+
+                <!-- Item 1: SFIO -->
+                <div class="relative z-10 mb-16 reveal delay-100 group">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="w-full md:w-5/12 order-2 md:order-1 md:text-right pl-20 md:pl-0 md:pr-12 relative">
+                            <!-- Mobile Dot Line -->
+                            <div class="absolute left-8 top-8 w-12 h-0.5 bg-brand-gold/30 md:hidden"></div>
+                            
+                            <div class="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-brand-gold md:border-l-0 md:border-r-4 group-hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Serious Fraud Investigation Office</h4>
+                                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Ministry of Corporate Affairs</div>
+                                <h5 class="text-sm font-bold text-brand-gold mb-3 uppercase tracking-wider">Legal Associate</h5>
+                                <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                                    My professional journey commenced with the Serious Fraud Investigation Office (SFIO), where I served as a Legal Associate. During this tenure, I gained valuable exposure to large-scale financial and corporate fraud investigations, working closely with Public Prosecutors and Central Government Counsels in trial and appellate litigation. I was entrusted with matters involving complex commercial transactions, regulatory violations, and white-collar criminal allegations before the Hon’ble Bombay High Court, City Civil Courts, Metropolitan Magistrate Courts, and the National Company Law Tribunal. This role not only strengthened my litigation capabilities but also cultivated a strong understanding of financial documentation, business structures, and investigative processes surrounding economic offences.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Center Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-gold border-4 border-white shadow-md order-1 z-20 group-hover:scale-150 transition-transform duration-300"></div>
+                        
+                        <div class="w-full md:w-5/12 order-3 md:order-2"></div>
+                    </div>
+                </div>
+
+                <!-- Item 2: ED -->
+                <div class="relative z-10 mb-16 reveal delay-200 group">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="w-full md:w-5/12 order-3 md:order-1"></div>
+                        
+                        <!-- Center Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-gold border-4 border-white shadow-md order-1 z-20 group-hover:scale-150 transition-transform duration-300"></div>
+                        
+                        <div class="w-full md:w-5/12 order-2 md:order-2 pl-20 md:pl-12 relative">
+                            <!-- Mobile Dot Line -->
+                            <div class="absolute left-8 top-8 w-12 h-0.5 bg-brand-gold/30 md:hidden"></div>
+
+                            <div class="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-brand-gold group-hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Enforcement Directorate</h4>
+                                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Ministry of Finance</div>
+                                <h5 class="text-sm font-bold text-brand-gold mb-3 uppercase tracking-wider">Legal Consultant</h5>
+                                <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                                    Thereafter, I joined the Enforcement Directorate as a Legal Consultant. This engagement significantly expanded my expertise in matters involving money laundering, foreign exchange violations, and national economic security. I assisted the Directorate in legal drafting, response to complaints, data analysis, and court-related compliance while working directly with investigating teams and Senior Government Counsels. I appeared and assisted in proceedings before the Hon’ble Gujarat High Court, PMLA Special Court, the Adjudicating Authority, Appellate Tribunal, and various other judicial forums. My responsibilities required meticulous attention to financial evidence, statutory interpretation, and strategic litigation support, deepening my proficiency in financial regulatory law.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: ASG -->
+                <div class="relative z-10 mb-16 reveal delay-300 group">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="w-full md:w-5/12 order-2 md:order-1 md:text-right pl-20 md:pl-0 md:pr-12 relative">
+                            <!-- Mobile Dot Line -->
+                            <div class="absolute left-8 top-8 w-12 h-0.5 bg-brand-gold/30 md:hidden"></div>
+
+                            <div class="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-brand-gold md:border-l-0 md:border-r-4 group-hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-slate-900 mb-1">Office of the Addl. Solicitor General</h4>
+                                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Union of India</div>
+                                <h5 class="text-sm font-bold text-brand-gold mb-3 uppercase tracking-wider">Counsel Assisting</h5>
+                                <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                                    Subsequently, I had the privilege of joining the Office of the Additional Solicitor General of India, where I assisted in representation of the Union of India before the Hon’ble Bombay High Court. In this role, I contributed to substantial matters concerning constitutional challenges, administrative decisions, and key governmental interests. My work involved preparing pleadings, conducting extensive legal research, and coordinating with central authorities to defend the Government’s legal stand. The courtroom exposure and procedural responsibilities entrusted to me during this time further refined my advocacy, drafting precision, and ability to address high-stakes litigation with clarity and professionalism.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Center Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-gold border-4 border-white shadow-md order-1 z-20 group-hover:scale-150 transition-transform duration-300"></div>
+                        
+                        <div class="w-full md:w-5/12 order-3 md:order-2"></div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Independent Practice -->
+                <div class="relative z-10 reveal delay-100 group">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="w-full md:w-5/12 order-3 md:order-1"></div>
+                        
+                        <!-- Center Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-brand-900 border-4 border-brand-gold shadow-lg order-1 z-20 group-hover:scale-125 transition-transform duration-300 animate-pulse"></div>
+                        
+                        <div class="w-full md:w-5/12 order-2 md:order-2 pl-20 md:pl-12 relative">
+                            <!-- Mobile Dot Line -->
+                            <div class="absolute left-8 top-8 w-12 h-0.5 bg-brand-gold/30 md:hidden"></div>
+
+                            <div class="bg-brand-900 p-8 rounded-sm shadow-xl hover:shadow-2xl transition-all duration-500 border-l-4 border-brand-gold group-hover:-translate-y-1 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2"></div>
+                                
+                                <h4 class="text-xl font-bold text-white mb-1 relative z-10">Independent Legal Practice</h4>
+                                <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 relative z-10">Present</div>
+                                <h5 class="text-sm font-bold text-brand-gold mb-3 uppercase tracking-wider relative z-10">Advocate High Court</h5>
+                                <p class="text-slate-300 text-sm leading-relaxed text-justify relative z-10">
+                                    Presently, as an independent practising Advocate before the Hon’ble Bombay High Court and various other courts in Maharashtra and Gujarat, I advise and represent clients in criminal and civil matters relating to financial disputes, commercial conflicts, and economic offences. My practice focuses on litigation involving matters of monetary significance, business liabilities, and regulatory concerns, drawing upon the institutional experience gained from my prior appointments. I actively appear before trial courts, appellate courts, and statutory forums, including NCLT and enforcement tribunals. I continue to remain committed to strategic advocacy, ethical representation, and delivering effective legal solutions to individuals, businesses, and government stakeholders.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="practice" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-3">Expertise</h2>
+                <h3 class="text-4xl font-serif font-bold text-slate-900">Areas of Practice</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="reveal delay-100 group bg-white p-8 rounded-sm shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-brand-gold cursor-pointer">
+                    <div class="mb-6 p-4 bg-slate-50 rounded-full w-fit group-hover:bg-amber-50 transition-colors text-slate-700 group-hover:text-brand-gold">
+                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-gold transition-colors">White-Collar Defence</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Strategic defence in PMLA, CBI, EOW, and SFIO investigations.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="reveal delay-200 group bg-white p-8 rounded-sm shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-brand-gold cursor-pointer">
+                    <div class="mb-6 p-4 bg-slate-50 rounded-full w-fit group-hover:bg-amber-50 transition-colors text-slate-700 group-hover:text-brand-gold">
+                        <i data-lucide="gavel" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-gold transition-colors">Criminal Litigation</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">End-to-end representation in Bail applications, Trials, and Appeals.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="reveal delay-300 group bg-white p-8 rounded-sm shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-brand-gold cursor-pointer">
+                    <div class="mb-6 p-4 bg-slate-50 rounded-full w-fit group-hover:bg-amber-50 transition-colors text-slate-700 group-hover:text-brand-gold">
+                        <i data-lucide="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-gold transition-colors">Contractual Disputes</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">High-stakes commercial arbitration and civil recovery proceedings.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="reveal delay-100 group bg-white p-8 rounded-sm shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-brand-gold cursor-pointer">
+                    <div class="mb-6 p-4 bg-slate-50 rounded-full w-fit group-hover:bg-amber-50 transition-colors text-slate-700 group-hover:text-brand-gold">
+                        <i data-lucide="scale" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-gold transition-colors">Regulatory & Consumer Disputes</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Safeguarding rights in state and national tribunals and forums.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section -->
+    <section id="approach" class="py-24 bg-brand-900 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">A Strategic Methodology</h2>
+                <p class="text-slate-400 text-lg">Detailed preparation meets aggressive execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="reveal delay-100 p-8 border border-slate-700 rounded-sm bg-slate-800/50 backdrop-blur-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-brand-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"></div>
+                    <div class="text-6xl font-serif text-brand-gold/10 mb-4 absolute top-4 right-6 group-hover:text-brand-gold/20 transition-colors">1</div>
+                    <h3 class="text-xl font-bold text-brand-gold mb-4 relative z-10">Meticulous Drafting</h3>
+                    <p class="text-slate-300 relative z-10">Precision in documentation forms the bedrock of our legal strategy. Closing every vulnerability.</p>
+                </div>
+
+                <div class="reveal delay-200 p-8 border border-slate-700 rounded-sm bg-slate-800/50 backdrop-blur-sm relative overflow-hidden group">
+                     <div class="absolute top-0 left-0 w-1 h-full bg-brand-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"></div>
+                    <div class="text-6xl font-serif text-brand-gold/10 mb-4 absolute top-4 right-6 group-hover:text-brand-gold/20 transition-colors">2</div>
+                    <h3 class="text-xl font-bold text-brand-gold mb-4 relative z-10">Rigorous Preparation</h3>
+                    <p class="text-slate-300 relative z-10">Anticipating the opposition's moves and preparing robust counter-arguments ahead of time.</p>
+                </div>
+
+                <div class="reveal delay-300 p-8 border border-slate-700 rounded-sm bg-slate-800/50 backdrop-blur-sm relative overflow-hidden group">
+                     <div class="absolute top-0 left-0 w-1 h-full bg-brand-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500"></div>
+                    <div class="text-6xl font-serif text-brand-gold/10 mb-4 absolute top-4 right-6 group-hover:text-brand-gold/20 transition-colors">3</div>
+                    <h3 class="text-xl font-bold text-brand-gold mb-4 relative z-10">Assertive Advocacy</h3>
+                    <p class="text-slate-300 relative z-10">Representing clients with firmness, confidence, and absolute clarity in the Hon’ble High Court.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="reveal">
+                    <h2 class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-3">Get in Touch</h2>
+                    <h3 class="text-4xl font-serif font-bold text-slate-900 mb-6">Confidential Consultation</h3>
+                    <p class="text-slate-600 mb-10">
+                        Reach out to discuss your legal matters. Strict confidentiality is maintained for all consultations.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="p-4 bg-slate-100 rounded-full text-brand-gold"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Chambers</h4>
+                                <p class="text-slate-600">72, Laxmi Building, Sir PM Road, Borabazar Precinct, Ballard Estate, Fort, Mumbai, Maharashtra 400001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="p-4 bg-slate-100 rounded-full text-brand-gold"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Email</h4>
+                                <p class="text-slate-600">Legaldesk.palan@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="p-4 bg-slate-100 rounded-full text-brand-gold"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Phone</h4>
+                                <p class="text-slate-600">+91 9029359496</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)" class="reveal delay-200 bg-slate-50 p-8 md:p-10 rounded-sm shadow-xl border-t-4 border-brand-gold">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2">First Name</label>
+                            <input id="first-name" name="first-name" type="text" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Email Address</label>
+                        <input id="email" name="email" type="email" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Matter Type</label>
+                        <select id="matter-type" name="matter-type" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all">
+                            <option>Select Practice Area</option>
+                            <option>Criminal Defence</option>
+                            <option>Civil Litigation</option>
+                            <option>Commercial Dispute</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Brief Details</label>
+                        <textarea id="details" name="details" rows="4" class="w-full bg-white border border-slate-200 p-3 rounded-sm focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-900 text-white font-bold py-4 hover:bg-brand-800 transition-colors uppercase tracking-widest text-sm">
+                        Request Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <img src="asset/Logo_main.webp" alt="YDP Legal Monogram" class="w-8 h-8 object-contain">
+                <span class="font-serif font-bold text-white tracking-wide">YASH PALAN</span>
+            </div>
+            <p class="text-sm"> 2025 Yash Dipesh Palan. All Rights Reserved.</p>
+            <div class="flex gap-6 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Form Handling
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+
+            // Loading State
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+            
+            const formData = new FormData(form);
+            
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                // Success State
+                btn.innerText = 'Request Sent Successfully';
+                btn.classList.remove('bg-brand-900', 'hover:bg-brand-800');
+                btn.classList.add('bg-green-700', 'hover:bg-green-800');
+                form.reset();
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                    btn.classList.add('bg-brand-900', 'hover:bg-brand-800');
+                    btn.classList.remove('bg-green-700', 'hover:bg-green-800');
+                }, 5000);
+            })
+            .catch((error) => {
+                alert('Submission failed. Please try again or contact us directly via phone.');
+                console.error(error);
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+        }
+
+        // Disclaimer Logic (show every reload)
+        const modal = document.getElementById('disclaimer-modal');
+
+        function showDisclaimer() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+                modal.querySelector('div').classList.add('scale-100');
+            }, 100);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function acceptDisclaimer() {
+            modal.classList.add('opacity-0');
+            modal.querySelector('div').classList.remove('scale-100');
+            modal.querySelector('div').classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        showDisclaimer();
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Logic
+        const navbar = document.getElementById('navbar');
+        const navItems = document.querySelectorAll('.nav-item-color');
+        const navSubs = document.querySelectorAll('.nav-sub-color');
+        const navBtn = document.querySelector('.nav-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+                navbar.classList.remove('py-6');
+                navbar.classList.add('py-4');
+                
+                navItems.forEach(el => el.classList.remove('text-white'));
+                navItems.forEach(el => el.classList.add('text-slate-900'));
+                
+                navSubs.forEach(el => el.classList.remove('text-slate-400'));
+                navSubs.forEach(el => el.classList.add('text-slate-500'));
+
+                navBtn.classList.remove('border-white/30');
+                navBtn.classList.add('border-slate-900', 'text-slate-900');
+            } else {
+                navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+                navbar.classList.add('py-6');
+                navbar.classList.remove('py-4');
+
+                navItems.forEach(el => el.classList.add('text-white'));
+                navItems.forEach(el => el.classList.remove('text-slate-900'));
+
+                navSubs.forEach(el => el.classList.add('text-slate-400'));
+                navSubs.forEach(el => el.classList.remove('text-slate-500'));
+
+                navBtn.classList.add('border-white/30');
+                navBtn.classList.remove('border-slate-900', 'text-slate-900');
+            }
+
+            // Progress Bar
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        });
+
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('translate-y-[-100%]')) {
+                menu.classList.remove('translate-y-[-100%]');
+                menu.classList.add('translate-y-0');
+            } else {
+                menu.classList.add('translate-y-[-100%]');
+                menu.classList.remove('translate-y-0');
+            }
+        }
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
